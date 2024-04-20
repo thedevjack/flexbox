@@ -1,3 +1,5 @@
+/* CABECALHO */
+
 .cabecalho__container {
   display: flex;
   /* aplica espaco entre os elementos */
@@ -12,11 +14,32 @@
   display: none;
 }
 
-@media (min-width: 834px) {
+@media (min-width: 832px) {
+  /* CABECALHO */
+
   /* quando for dado -zoom o campo de pesquisa some
     quando voltar ao valor padrão 100% reaparece
 */
   .cabecalho__pesquisar__item {
     display: block;
   }
+  /* RODAPE */
+
+  .rodape__container {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+}
+
+/* RODAPE */
+.rodape__container {
+  display: flex;
+  /* direciona as linhas como coluna */
+    /* flex-direction: column; */
+  /* quebra linhas  */
+    /* flex-wrap: wrap; */
+
+  /* faz a mesma coisa que utilizar:
+ flex-direction: column e flex-wrap: wrap   */
+  flex-flow: column wrap;
 }
