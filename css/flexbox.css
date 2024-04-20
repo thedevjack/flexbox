@@ -1,0 +1,22 @@
+.cabecalho__container {
+  display: flex;
+  /* aplica espaco entre os elementos */
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.cabecalho__pesquisar__item {
+  /* esconde o campo de pesquisa */
+  display: none;
+}
+
+@media (min-width: 834px) {
+  /* quando for dado -zoom o campo de pesquisa some
+    quando voltar ao valor padrão 100% reaparece
+*/
+  .cabecalho__pesquisar__item {
+    display: block;
+  }
+}
