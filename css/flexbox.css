@@ -100,9 +100,20 @@
 
 /* VIDEO */
 
+.videos__container {
+  display: flex;
+  /* flex-wrap: wrap; -> quebra o row do flex e alinha eles um embaixo do outro */
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .videos__item {
   height: 303px;
   width: 280px;
+  /* flex-grow: 1 -> é uma propriedade de item faz com que todos os elementos se ajustem
+  proporcionalmente aproveitando o espaço do elemento pai
+  */
+  flex-grow: 1;
 }
 
 .descricao-video {
